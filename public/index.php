@@ -6,8 +6,8 @@
 * Index file 
 */
 
-define('BASE_PATH', dirname(__FILE__));
+define('BASE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 
-define('CORE_PATH', BASE_PATH.'/../softy/core/');
+define('CORE_PATH', realpath(BASE_PATH.'../softy/core/').DIRECTORY_SEPARATOR);
 
-define('APP_PATH', BASE_PATH.'/../softy/app/');
+define('APP_PATH', realpath(BASE_PATH.'../softy/app/').DIRECTORY_SEPARATOR);
